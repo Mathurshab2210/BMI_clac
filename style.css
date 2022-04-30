@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: rgb(3, 190, 190);
+    min-height: 100vh;
+}
+.area{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(4, 56, 68);
+    width:50vw;
+    min-height: 45vh;
+    margin: 0 auto;
+    border-radius: 12px;
+    border:3px solid aquamarine;
+    margin-top:8%;
+    box-shadow: 12px 5px 12px whitesmoke;
+}
+.area>h1{
+    color: aliceblue;
+    margin: 0 auto;
+    text-decoration: underline 5px blue;
+    font-size: 2.7em;
+}
+.calcl{
+    margin: 0 auto;
+}
+#calc{
+    width:200px;
+    margin: 0 auto;
+    font-weight: bolder;
+    color: white;
+    height: 37px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: 3px;
+    background-color: rgba(13, 107, 176, 0.87);
+    
+    box-shadow:
+    7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+#calc:hover{
+    cursor: pointer;
+    background-color: white;
+    color:rgba(13, 107, 176, 0.87);
+}
+#calc:active {
+    box-shadow:
+     7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+   transform: translateY(4px);
+   /* Moving button 4px to y-axis */
+}
+#reset{
+    width:200px;
+    margin: 0 auto;
+    font-weight: bolder;
+    color: white;
+    height: 37px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: 3px;
+    background-color: rgba(13, 107, 176, 0.87);
+    
+    box-shadow:
+    7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+#reset:hover{
+    cursor: pointer;
+    background-color: white;
+    color:rgba(13, 107, 176, 0.87);
+}
+#reset:active {
+    box-shadow:
+     7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+   transform: translateY(4px);
+   /* Moving button 4px to y-axis */
+}
+
+#height,#weight{
+    width:40vw;
+    height: 45px;
+    border: 6px solid rgb(48, 48, 48);
+    border-radius: 23px 15px;
+    font-weight: bolder;
+}
+#weight:focus{
+    border: 0;
+    outline:0;
+}
+#height:focus{
+    border: 0;
+    outline:0;
+}
+textarea{
+    display: none;
+    width:25vw;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-family: cursive;
+}
+@media(max-width:360px){
+    .area{
+        margin-top: 30%;
+        width: 65vw;
+        
+    }
+    .area>h1{
+        font-size: 2em;
+    }
+    textarea{
+        width: 55vw;
+        font-size: 0.76em;
+    }
+}
+@media(max-width:700px){
+    .area{
+        margin-top: 12%;
+        width: 55vw;
+        min-height:60vh ;
+    }
+}
+@media(max-width:600px){
+    .area{
+        margin-top: 12%;
+        width: 75vw;
+        min-height:60vh ;
+    }
+}
